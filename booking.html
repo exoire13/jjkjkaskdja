@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book a Cage | ABC Baseball</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="logo">
+        ⚾ ABC Baseball
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+        ☰
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Book</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<!-- BOOKING SECTION -->
+<section class="booking-section">
+
+    <h1>Reserve a Batting Cage</h1>
+    <p>Choose your date, time, and cage below.</p>
+
+    <form id="bookingForm">
+
+        <div class="form-grid">
+
+            <!-- NAME -->
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" required>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" required>
+            </div>
+
+            <!-- PHONE -->
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" required>
+            </div>
+
+            <!-- DATE -->
+            <div class="input-group">
+                <label>Date</label>
+                <input type="date" id="selectedDate" required>
+            </div>
+
+            <!-- TIME -->
+            <div class="input-group full-width">
+
+                <label>Select a Time</label>
+
+                <div class="time-slots">
+
+                    <button type="button" class="time-slot" data-time="9:00 AM">9:00 AM</button>
+                    <button type="button" class="time-slot" data-time="10:00 AM">10:00 AM</button>
+                    <button type="button" class="time-slot" data-time="11:00 AM">11:00 AM</button>
+                    <button type="button" class="time-slot" data-time="12:00 PM">12:00 PM</button>
+                    <button type="button" class="time-slot" data-time="1:00 PM">1:00 PM</button>
+                    <button type="button" class="time-slot" data-time="2:00 PM">2:00 PM</button>
+                    <button type="button" class="time-slot" data-time="3:00 PM">3:00 PM</button>
+                    <button type="button" class="time-slot" data-time="4:00 PM">4:00 PM</button>
+
+                </div>
+
+                <input type="hidden" id="selectedTime">
+
+            </div>
+
+            <!-- CAGE -->
+            <div class="input-group">
+                <label>Cage</label>
+                <select required>
+                    <option>Cage 1</option>
+                    <option>Cage 2</option>
+                    <option>Cage 3</option>
+                    <option>Cage 4</option>
+                </select>
+            </div>
+
+            <!-- DURATION -->
+            <div class="input-group">
+                <label>Duration</label>
+                <select>
+                    <option>30 Minutes</option>
+                    <option>1 Hour</option>
+                    <option>2 Hours</option>
+                </select>
+            </div>
+
+            <!-- NOTES -->
+            <div class="input-group full-width">
+                <label>Notes</label>
+                <textarea rows="4"></textarea>
+            </div>
+
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <button type="submit" class="book-btn">
+            Reserve Now
+        </button>
+
+    </form>
+
+</section>
+
+<!-- TOAST -->
+<div id="toast" class="toast"></div>
+
+<!-- SCRIPTS -->
+<script src="js/script.js"></script>
+<script src="js/booking.js"></script>
+
+</body>
+
+<input id="searchInput" type="text" placeholder="Email or phone">
+<button id="searchBtn">Search</button>
+
+<div id="results"></div>
+
+</html>

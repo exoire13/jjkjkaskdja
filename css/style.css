@@ -1,0 +1,466 @@
+/* ===========================
+   GENERAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#0d0d0d;
+    color:white;
+    overflow-x:hidden;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(0,0,0,.65);
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-family:'Oswald',sans-serif;
+    font-size:2rem;
+    color:#e53935;
+    font-weight:700;
+
+}
+
+.nav-links{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#e53935;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+    url("../images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+.hero-overlay{
+
+    max-width:900px;
+
+}
+
+.hero h1{
+
+    font-family:'Oswald',sans-serif;
+    font-size:5rem;
+    line-height:1.1;
+
+    text-transform:uppercase;
+
+}
+
+.hero p{
+
+    margin:25px 0;
+    font-size:1.3rem;
+    color:#dddddd;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-red,
+.btn-white{
+
+    padding:16px 38px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.btn-red{
+
+    background:#e53935;
+    color:white;
+
+}
+
+.btn-red:hover{
+
+    background:#ff4b47;
+    transform:translateY(-4px);
+
+}
+
+.btn-white{
+
+    background:white;
+    color:black;
+
+}
+
+.btn-white:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section{
+
+    padding:100px 10%;
+
+}
+
+section h2{
+
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:60px;
+    font-family:'Oswald',sans-serif;
+
+}
+
+/* ===========================
+   FEATURE CARDS
+=========================== */
+
+.feature-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+
+}
+
+.card{
+
+    background:#1a1a1a;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    transition:.35s;
+
+    border:1px solid #252525;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#e53935;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:#e53935;
+
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+
+    text-align:center;
+
+}
+
+.about p{
+
+    max-width:900px;
+
+    margin:auto auto 40px;
+
+    line-height:1.9;
+
+    color:#cfcfcf;
+
+}
+
+/* ===========================
+   PRICING
+=========================== */
+
+.pricing-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+.price-card{
+
+    background:#171717;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.price-card:hover{
+
+    transform:scale(1.04);
+
+}
+
+.featured{
+
+    border:3px solid #e53935;
+
+}
+
+.price-card h3{
+
+    font-size:2rem;
+
+}
+
+.price-card span{
+
+    display:block;
+
+    margin:25px 0;
+
+    font-size:3rem;
+
+    color:#e53935;
+
+    font-weight:bold;
+
+}
+
+.price-card a{
+
+    display:inline-block;
+
+    background:#e53935;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:35px;
+
+    transition:.3s;
+
+}
+
+.price-card a:hover{
+
+    background:#ff4b47;
+
+}
+
+/* ===========================
+   REVIEWS
+=========================== */
+
+.review-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+.review{
+
+    background:#171717;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+}
+
+.review p{
+
+    margin:20px 0;
+
+    color:#cccccc;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#050505;
+
+    padding:60px 10%;
+
+    text-align:center;
+
+}
+
+footer h2{
+
+    color:#e53935;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin:10px 0;
+
+    color:#aaaaaa;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+.hero h1{
+
+    font-size:3.2rem;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.nav-links{
+
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+/* ===========================
+   MOBILE NAVIGATION
+=========================== */
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+}
