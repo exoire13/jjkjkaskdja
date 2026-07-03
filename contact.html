@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contact | ABC Baseball</title>
+  <title>Contact | ABC Baseball</title>
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -16,62 +16,52 @@
 <!-- NAVBAR -->
 <nav class="navbar">
 
-    <div class="logo">
-        ⚾ ABC Baseball
-    </div>
+  <div class="logo">⚾ ABC Baseball</div>
 
-    <div class="menu-toggle" id="mobile-menu">
-        ☰
-    </div>
+  <div class="menu-toggle" id="mobile-menu">☰</div>
 
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="booking.html">Book</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="lessons.html">Lessons</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="booking.html">Book</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 
 </nav>
 
-<!-- PAGE HEADER -->
-<header class="contact-header">
-  <h1>Contact Us</h1>
-  <p>Have questions? Send us a message and we’ll get back to you.</p>
-</header>
 
 <!-- CONTACT SECTION -->
 <section class="contact-container">
 
-  <!-- FORM -->
-  <form class="contact-form">
+  <form class="contact-form" id="contactForm">
 
     <div class="input-group">
       <label>Name</label>
-      <input type="text" placeholder="Your name" required>
+      <input type="text" id="name" placeholder="Your name" required>
     </div>
 
     <div class="input-group">
       <label>Email</label>
-      <input type="email" placeholder="Your email" required>
+      <input type="email" id="email" placeholder="Your email" required>
     </div>
 
     <div class="input-group">
       <label>Subject</label>
-      <input type="text" placeholder="Subject">
+      <input type="text" id="subject" placeholder="Subject">
     </div>
 
     <div class="input-group full">
       <label>Message</label>
-      <textarea rows="6" placeholder="Type your message..." required></textarea>
+      <textarea id="message" rows="6" placeholder="Type your message..." required></textarea>
     </div>
 
     <button type="submit">Send Message</button>
 
   </form>
 
-  <!-- INFO BOX -->
+
   <div class="contact-info">
 
     <h2>Get In Touch</h2>
@@ -90,7 +80,17 @@
 
 </section>
 
+
+<!-- FOOTER -->
+<footer>
+  <h2>ABC Baseball</h2>
+  <p>We’ll respond within 24–48 hours.</p>
+</footer>
+
+
+<!-- SCRIPTS -->
 <script src="js/script.js"></script>
+<script src="js/contact.js"></script>
 
 </body>
 </html>
